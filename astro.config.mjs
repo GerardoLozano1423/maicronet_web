@@ -14,7 +14,7 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/uti
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel/static';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -30,7 +30,7 @@ export default defineConfig({
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
-  output: 'server',
+  output: 'static',
   adapter: vercel({
     webAnalytics: {
       enabled: true,
