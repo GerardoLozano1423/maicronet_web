@@ -14,6 +14,8 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/uti
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 
+import vercel from '@astrojs/vercel/serverless';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const whenExternalScripts = (items = []) =>
@@ -29,7 +31,11 @@ export default defineConfig({
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
-
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   integrations: [
     tailwind({
       applyBaseStyles: false,
