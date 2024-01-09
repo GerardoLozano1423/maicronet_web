@@ -1,0 +1,67 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contacto',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <ContactUs
+    title="¿Está listo para llevar su negocio al siguiente nivel con soluciones tecnológicas a medida y un soporte que supera expectativas? "
+    subtitle="En MAICRONET, estamos esperando para hacer precisamente eso. Póngase en contacto con nosotros hoy mismo y descubra cómo nuestras innovadoras soluciones de TI pueden impulsar su éxito."
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'Nombre Completo',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+      {
+        type: 'text',
+        name: 'celular',
+        label: 'Celular',
+      },
+    ]}
+    textarea={{
+      label: 'Comentario',
+    }}
+    disclaimer={{
+      label:
+        'Al enviar este formulario de contacto, usted reconoce y acepta la recopilación de su información personal.',
+    }}
+    description="Nuestro equipo de soporte normalmente responde dentro de las 24 horas hábiles."
+    button="Enviar Información"
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="¡Estamos aquí para ayudar!"
+    items={[
+      {
+        title: 'Teléfono',
+        description: '+52 81 8859 7242',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Email',
+        description: 'contacto@maicronet.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Dirección',
+        description: 'Acantilado 3306, Riberas del Rio',
+        icon: 'tabler:map-pin',
+      },
+    ]}
+  />
+</Layout>

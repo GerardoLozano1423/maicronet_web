@@ -1,0 +1,61 @@
+---
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'About us',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline=""
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title">
+      Entendemos que la tecnología es el corazón de su negocio <br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Por eso nuestro Servicio Técnico no es solo una oferta, es una promesa de excelencia y dedicación Con atención
+      personalizada y un equipo de expertos calificados, garantizamos soluciones eficientes y adaptadas a sus
+      necesidades únicas. Nuestra rapidez de respuesta y el amplio espectro de servicios integrales están diseñados para
+      mantener su empresa en marcha sin interrupciones.
+    </Fragment>
+  </Hero>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Nuestra rapidez de respuesta y el amplio espectro de servicios integrales"
+    subtitle="están diseñados para mantener su empresa en marcha sin interrupciones."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Nos comprometemos',
+        description:
+          'a estar siempre disponibles a través de nuestro soporte multicanal, ofreciendo la comodidad y accesibilidad que su ritmo de trabajo demanda.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Usamos repuestos y componentes',
+        description:
+          'de la más alta calidad para asegurar que cada reparación sea duradera y confiable, respaldada por nuestra garantía de servicio.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'No solo reparamos problemas técnicos',
+        description:
+          'sino que nos adelantamos a ellos con soluciones sostenibles y un seguimiento post-servicio que garantiza su total satisfacción.',
+        icon: 'tabler:template',
+      },
+    ]}
+  />
+</Layout>

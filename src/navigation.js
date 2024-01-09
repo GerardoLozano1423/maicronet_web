@@ -8,15 +8,15 @@ export const headerData = {
     },
     {
       text: 'Servicios',
-      href: getPermalink('/#features'),
+      href: getPermalink('/#servicios'),
     },
     {
       text: 'Nosotros',
-      href: getPermalink('/#features'),
+      href: '/nosotros',
     },
     {
       text: 'Contactanos',
-      href: getPermalink('/#features'),
+      href: '/contacto',
     },
   ],
 };
