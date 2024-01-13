@@ -1,0 +1,83 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+
+const metadata = {
+  title: 'Venta de Paneles para Revendedores',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline=""
+    title="Venta de Paneles para Revendedores"
+    subtitle="Afiliate como proveedor directo del servicio Streaming/Señal en vivo(TV por Internet) y genera ingresos extra desde la comodidad de tu casa"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Mas informacion por',
+        href: 'https://www.facebook.com/profile.php?id=61554884085513',
+        icon: 'tabler:brand-facebook',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/maicrotv.png',
+      alt: 'Venta de Paneles para Revendedores',
+    }}
+  />
+
+  <Features3
+    title="Las ventajas de afiliarte con Maicrotv son"
+    subtitle=""
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Ingresos Pasivos',
+        description:
+          'Los vendedores pueden generar ingresos de manera recurrente, especialmente si las suscripciones se renuevan automáticamente',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Baja Inversión Inicial',
+        description:
+          'Los vendedores pueden comenzar su negocio sin la necesidad de una gran inversión de capital. Esto reduce las barreras de entrada para pequeños empresarios o aquellos que buscan una oportunidad de negocio con limitaciones financieras.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Acceso a Nuevos Lanzamientos y Contenido Exclusivo',
+        description:
+          'Al asociarse con un proveedor de servicios de streaming, los vendedores pueden ofrecer a sus clientes acceso a nuevos lanzamientos y contenido exclusivo, lo que es un fuerte argumento de venta.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Alta Rentabilidad',
+        description:
+          ' Con una estructura de costos fijos bajos, los vendedores tienen el potencial de obtener márgenes de ganancia significativos a medida que incrementan sus ventas.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Trabajo desde Casa',
+        description:
+          'Este modelo de negocio permite a los vendedores operar desde cualquier lugar, incluyendo el hogar, lo que ofrece flexibilidad y comodidad.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Creciente Demanda de Contenido de Streaming',
+        description:
+          'El consumo de contenido de streaming sigue en aumento, lo que sugiere un mercado en expansión con una demanda constante.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Fácil Escalabilidad',
+        description:
+          'Los vendedores pueden escalar su negocio fácilmente, añadiendo más suscripciones sin necesidad de aumentar en gran medida su base de costos.',
+        icon: 'tabler:template',
+      },
+    ]}
+  />
+</Layout>

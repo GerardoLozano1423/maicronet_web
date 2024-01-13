@@ -18,6 +18,11 @@ export const headerData = {
       text: 'Contactanos',
       href: '/contacto',
     },
+    {
+      ariaLabel: 'Instagram',
+      icon: 'tabler:brand-instagram',
+      href: 'https://www.instagram.com/maicronet?igsh=N3hla3k5c2QzZHNu',
+    },
   ],
   socialLinks: [
     {
