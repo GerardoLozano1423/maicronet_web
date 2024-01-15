@@ -11,7 +11,7 @@ metadata:
   title:
     default: Maicronet
     template: '%s — Maicronet'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Nuestro compromiso es brindar un soporte excepcional, asegurando que cada interacción añada valor y eficiencia a su negocio."
   robots:
     index: true
     follow: true
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 apps:
