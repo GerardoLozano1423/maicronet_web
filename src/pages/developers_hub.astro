@@ -1,0 +1,81 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+
+const metadata = {
+  title: 'Maicronet Developers Hub',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline=""
+    title="Maicronet Developers Hub"
+    subtitle="Te ofrecemos cursos de programación accesibles y dinámicos, diseñados para llevarte desde los fundamentos hasta las técnicas avanzadas en el mundo tecnológico actual. "
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contactanos',
+        href: 'https://api.whatsapp.com/send?phone=528126517714',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        text: 'Por que capacitarte en Maicronet Developers Hub',
+        href: '#ventajas',
+        icon: 'tabler:file-check',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/maicronetdevs.png',
+      alt: 'Maicronet Developers Hub',
+    }}
+  />
+
+  <Features3
+    id="ventajas"
+    title="Temas que veras en los cursos"
+    subtitle=""
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Introducción a la Programación',
+        description: 'Perfecto para principiantes, este curso cubre los fundamentos del código.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Desarrollo Web Front-End',
+        description: 'Sumérgete en HTML, CSS y JavaScript para construir sitios web interactivos.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Desarrollo Web Full Stack',
+        description:
+          'Aprende tanto el desarrollo front-end como el back-end para convertirte en un desarrollador completo.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Fundamentos de Backend',
+        description:
+          'Comprende los principios básicos del desarrollo backend, incluyendo arquitectura de servidores, APIs, y bases de datos.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Manejo de Bases de Datos',
+        description:
+          'Aprende a almacenar, recuperar y manipular datos usando sistemas de bases de datos como MySQL y PostgreSQL.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Despliegue y Mantenimiento',
+        description:
+          'Adquiere habilidades para desplegar, monitorear y mantener aplicaciones en servidores y plataformas en la nube.',
+        icon: 'tabler:template',
+      },
+    ]}
+  />
+</Layout>
